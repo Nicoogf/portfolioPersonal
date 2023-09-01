@@ -10,7 +10,7 @@ import Avatar from "../components/Avatar" ;
 import { motion } from "framer-motion" ;
 
 //Variants
-import { faceIn } from "../variants" ;
+import { faceIn, fadeIn } from "../variants" ;
 
 const Home = () => {
   return (
@@ -23,20 +23,56 @@ const Home = () => {
           h-full container mx-auto">
 
             { /* Titulo */}
-            <h1 className="h1"> 
-              Transforming Idea <br /> into <span className="text-accent"> Digital Reality </span> 
-            </h1>
+
+            <motion.h1 
+              variants={fadeIn ('down' , 0.2 )} 
+              initial='hidden' 
+              animate="show" 
+              exit='hidden xl:flex'
+              className="h1"
+              > 
+                  Transforming Idea <br /> into <span className="text-accent"> Digital Reality </span> 
+
+            </motion.h1>
 
             {/* Subtitulo */}
-            <p className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            </p>
+            <motion.p 
+              variants={fadeIn ('down' , 0.3 )} 
+              initial='hidden' 
+              animate="show" 
+              exit='hidden xl:flex'
+              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </motion.p>
+
+            {/* Button  Chequear 44 segundo botton */ }
+
+            <div className="flex justify-center xl:hidden relative">
+              <ProjectsBtn />
+            </div>
+
+            <motion.div 
+              variants={fadeIn ('down' , 0.4 )} 
+              initial='hidden' 
+              animate="show" 
+              exit='hidden xl:flex'
+            >
+              <ProjectsBtn />
+            </motion.div>
 
           </div>
         </div>
 
         { /* Imagen */}
-        <div> Image </div>
+        <div className="w-[1200px] h-full absolute right-0 bottom-0"> 
+
+          {/* Background de la imagen */}
+          <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right 
+          xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
+              image 
+          </div>
+         </div>
 
       </div>
     );
