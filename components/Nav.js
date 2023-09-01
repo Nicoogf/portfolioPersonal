@@ -30,7 +30,7 @@ export const navData = [
 import Link from "next/link" ;
 
 //Next Router 
-import { useRouter } from "next/Router" ; 
+import { useRouter } from "next/router" ; 
 
 const Nav = () => {
 
