@@ -67,12 +67,23 @@ const Home = () => {
         { /* Imagen */}
         <div className="w-[1200px] h-full absolute right-0 bottom-0"> 
 
-          {/* Background de la imagen */}
-          <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right 
-          xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
-              image 
-          </div>
-         </div>
+        {/* Background de la imagen */}
+        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right 
+        xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
+               
+        </div>
+
+        { /* Particles */}
+        <div> Particles</div>
+
+        { /* Avatar Imagen duplicada 53*/ }
+        <div className="w-full h-full max-w-[737px] max-h-[678px] absolute  -bottom-32">
+          <Avatar />
+        </div>
+
+        <Avatar />
+
+      </div>
 
       </div>
     );
