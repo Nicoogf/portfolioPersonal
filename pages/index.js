@@ -58,7 +58,10 @@ const Home = () => {
               animate="show" 
               exit='hidden xl:flex'
             >
-              <ProjectsBtn />
+
+
+              { /* <ProjectsBtn />   */ }
+              
             </motion.div>
 
           </div>
