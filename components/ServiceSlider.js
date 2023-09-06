@@ -23,29 +23,25 @@ import { FreeMode , Pagination } from "swiper" ;
 const serviceData = [
   {
     icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Mockup',
+    description: 'Mostrando la estructura inicial del proyecto para previsualizar la interfaz y mejorar la experiencia del usuario.',
   },
   {
     icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Estilos de Pagina',
+    description: 'Utilizando Bootstrap y Tailwind para crear aplicaciones con estilos predefinidos y una estructura eficiente.',
   },
   {
     icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Peticiones',
+    description: 'En mis proyectos se emplearon conexiones a bases de datos y las principales peticiones que usan los CRUD´s.',
   },
   {
     icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
+    title: 'Metodologias',
+    description: 'En mi capacitación , implementábamos Scrum para gestionar proyectos de forma colaborativa.',
+  }
+ 
 ];
 
 

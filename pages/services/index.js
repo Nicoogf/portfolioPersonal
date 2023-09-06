@@ -27,7 +27,7 @@ const Services = () => {
                   exit="hidden" 
                   className="h2 xl:mt-8"
                 >
-                  My Services <span className="text-accent"> . </span> 
+                 Mi Servicios <span className="text-accent"> . </span> 
 
               </motion.h2>
 
@@ -37,7 +37,8 @@ const Services = () => {
                 animate="show" 
                 exit="hidden" 
                 className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-                Lorem ipsum dolor sit amet. Qui velit minima quo saepe fugit id veritatis galisum. Ut aspernatur voluptatem et labore minus et recusandae
+                 <span className="text-white/90 font-bold"> Usabilidad, el rendimiento y la estética </span>   <br />
+                 para garantizar una presencia en línea efectiva y atractiva.
               </motion.p>
 
             </div>

@@ -10,7 +10,7 @@ import Avatar from "../components/Avatar" ;
 import { motion } from "framer-motion" ;
 
 //Variants
-import { faceIn, fadeIn } from "../variants" ;
+import { faceIn , fadeIn } from "../variants" ;
 
 const Home = () => {
   return (
@@ -31,7 +31,7 @@ const Home = () => {
               exit='hidden xl:flex'
               className="h1"
               > 
-                  Transforming Idea <br /> into <span className="text-accent"> Digital Reality </span> 
+                Hola mundo! <br /> Soy Nicolas <br />  <span className="text-accent"> Web developer </span> 
 
             </motion.h1>
 
@@ -41,26 +41,18 @@ const Home = () => {
               initial='hidden' 
               animate="show" 
               exit='hidden xl:flex'
-              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+              className="text-white/90 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Como desarrollador Full-Stack con conocimientos sólidos en Javascript , mi objetivo es crear soluciones digitales que se destaquen por su innovación y calidad. Con pasión por  impulsar mi carrera profesional en el area de las tecnologías web
             </motion.p>
 
             {/* Button  Chequear 44 segundo botton */ }
 
-            <div className="flex justify-center xl:hidden relative">
+            
+
+            <motion.div variants={fadeIn ('down' , 0.4 )} initial='hidden' animate="show" exit='hidden' className="flex hidden: xl:flex" >
+
               <ProjectsBtn />
-            </div>
-
-            <motion.div 
-              variants={fadeIn ('down' , 0.4 )} 
-              initial='hidden' 
-              animate="show" 
-              exit='hidden xl:flex'
-            >
-
-
-              { /* <ProjectsBtn />   */ }
               
             </motion.div>
 

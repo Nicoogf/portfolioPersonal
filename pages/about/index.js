@@ -1,6 +1,4 @@
-//
 import React , { useState } from 'react' ;
-
 
 // icons
 import {
@@ -8,21 +6,28 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
-  FaFigma,
+  FaNodeJs  
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
+  SiAdobeillustrator,
   SiAdobephotoshop,
+  SiPostman,
+  SiXampp,
+  SiBootstrap
 } from "react-icons/si";
+
+import {
+  BiLogoTailwindCss,
+  BiLogoMongodb
+} from "react-icons/bi";
+
 
 //  data
 const aboutData = [
   {
-    title: 'skills',
+    title: 'Tecnologias',
     info: [
       {
         title: 'Web Development',
@@ -30,65 +35,51 @@ const aboutData = [
           <FaHtml5 key="html5" />,
           <FaCss3 key="css3" />,
           <FaJs key="js" />,
+          <FaNodeJs key="node"/>,
           <FaReact key="react"/>,
-          <SiNextdotjs key="nextjs"/>,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress"/>,
+          <SiNextdotjs key="nextjs"/> ,
+          <BiLogoTailwindCss key="tailwind"/>,    
+          <SiBootstrap key="boostrap"/>        
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma key="figma"/>, <SiAdobexd  key="adobexd" />, <SiAdobephotoshop key="photoshop"/>],
+        icons: [ <SiAdobephotoshop key="photoshop"/> , <SiAdobeillustrator key="ilustrator"/>],
       },
     ],
   },
+
   {
-    title: 'awards',
+    title: 'Herramientas',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
+        title: 'Otras Herramientas',
+        icons: [
+          <BiLogoMongodb key="mongo" />,
+          <SiPostman key="postman" />,
+          <SiXampp key="xamp" />,        
+         
+               
+        ],
+      },      
     ],
   },
+
   {
-    title: 'experience',
+    title: 'Certificados',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'DigitalHouse - Desarrollador Full Stack ',
+        stage: '2022 - 2023',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Universidad Tecnologica Nacional (UTN) - Desarrollo Web',
+        stage: '2023',
       },
     ],
   },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
-      },
-    ],
-  },
+ 
+ 
 ];
 
 //Componentes
@@ -114,6 +105,7 @@ const About = () => {
       <Circles />
 
       {/* Avatar */}
+
        <motion.div 
           variants={ fadeIn( 'right' , 0.2 )} 
           initial="hidden" 
@@ -125,7 +117,8 @@ const About = () => {
            <Avatar />
 
        </motion.div>
-       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row 
+
+      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row 
        gap-x-6'>
 
         {/* Texto */}
@@ -140,7 +133,7 @@ const About = () => {
             exit="hiden" 
           > 
 
-          Captivating <span className='text-accent'> stories </span> birth magnificent designs.</motion.h2>
+           Un poco sobre <span className='text-accent'> mi Perfil </span> </motion.h2>
 
           <motion.p 
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
@@ -150,7 +143,7 @@ const About = () => {
             exit="hiden" 
           > 
 
-          10 year ago , i Began freelancing as a developer. Since then I ´ve done rmeote work for agencies , consulated for startups and collaborated on digital products for bussiness and consumer use.
+          Como desarrollador web, he emprendido proyectos independientes para fortalecer mi experiencia y conocimientos. Cada proyecto fue una oportunidad de aprendizaje y superación. <br/> En estos momentos me encuentro con la motivacion de unirme a un equipo de trabajo IT para poder fortalecer mis conocimientos
           </motion.p>
 
           {/* counters */}
@@ -168,53 +161,41 @@ const About = () => {
               <div className='relative flex-1 after:w-[1px] after:h-full 
               after:bg-white/10 after:absolute after:top-0 after:right-0'> 
 
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-0'>
-                  <CountUp start={ 0 } end={ 10 } duration={ 5 }/> +
+                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-0 ml-4'>
+                  <CountUp start={ 0 } end={ 1 } duration={ 5 }/> 
                 </div>
 
                 <div className='text-xs uppercase tracking-[1px] leadding-[1.4] max-w-[100px] '>
-                  Years of experience
+                  Año de Experiencia
                 </div>
               </div>
 
-              {/* Clientes */}
+              
+
+               {/* Awards */}
               <div className='relative flex-1 after:w-[1px] after:h-full 
               after:bg-white/10 after:absolute after:top-0 after:right-0'> 
 
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-0'>
-                  <CountUp start={ 0 } end={ 250 } duration={ 5 }/> +
+                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-0 ml-4'>
+                  <CountUp start={ 0 } end={ 3 } duration={ 5 }/> 
                 </div>
 
                 <div className='text-xs uppercase tracking-[1px] leadding-[1.4] max-w-[100px] '>
-                 Clientes satisfechos
+                 Certificados Oficiales
                 </div>
-              </div>
+              </div>   
 
-               {/* Proyectos */}
-              <div className='relative flex-1 after:w-[1px] after:h-full 
-              after:bg-white/10 after:absolute after:top-0 after:right-0'> 
+              {/* Proyectos */}
+              <div className='relative flex-1 '> 
 
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-0'>
-                  <CountUp start={ 0 } end={ 650 } duration={ 5 }/> +
+                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-0 ml-4'>
+                  <CountUp start={ 0 } end={ 20 } duration={ 5 }/> +
                 </div>
 
                 <div className='text-xs uppercase tracking-[1px] leadding-[1.4] max-w-[100px] '>
                  Proyectos Finalizados
                 </div>
-              </div>
-
-               {/* Awards */}
-              <div className='relative flex-1'> 
-
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-0'>
-                  <CountUp start={ 0 } end={ 8 } duration={ 5 }/> +
-                </div>
-
-                <div className='text-xs uppercase tracking-[1px] leadding-[1.4] max-w-[100px] '>
-                 Premios ganados
-                </div>
-              </div>
-
+              </div> 
 
             </div>
           </motion.div>
@@ -236,7 +217,7 @@ const About = () => {
                     <div 
                       key={ itemIndex } 
                       className={`${
-                        index === itemIndex && `text-accent after:w-[100%] after:bg-accent after:transition-all 
+                        index === itemIndex && `text-accent after:w-[100%] after:text-accent after:bg-accent after:transition-all 
                         after:duration-300`
                         } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] 
                           after:bg-white after:absolute after:-bottom-1 after:left-0`}
@@ -275,6 +256,7 @@ const About = () => {
         </motion.div>
 
       </div>
+
     </div>    
    );            
   }; 
