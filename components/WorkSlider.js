@@ -6,18 +6,22 @@ const workSlider = {
         {
           title: 'title',
           path: '/thumb11.jpg',
+          desc: 'First Portfolio'
         },
         {
           title: 'title',
           path: '/thumb22.jpg',
+          desc: 'Ta-Te-Ti Game'
         },
         {
           title: 'title',
           path: '/thumb33.jpg',
+          desc: 'Snake Game'
         },
         {
           title: 'title',
           path: '/thumb4.jpg',
+          desc: 'Portfolio'
         },
       ],
     },
@@ -86,21 +90,29 @@ const WorkSlider = () => {
                             { /* Image */}
                             <Image src={ image.path} width={500} height={300} alt=""/>
                             { /* overlay Gradient*/ }
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#311588] to-[#020dacd2] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                             {/* Title */}
                             <div className="absolute bottom-0 translate-y-full 
                               group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
 
-                              <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2rem]">
+                              <div className="flex flex-col items-center gap-x-2 text-[13px] tracking-[0.1rem]">
 
-                                {/* Primer Parte del titulo */}
-                                <div className="delay-100">
-                                  Live
+                                <div className="flex flex-row gap-x-1 group-hover:translate-y-0 transition-all duration-300 delay-100">
+
+                                {/* Primer Parte del titulo */}                                                                
+                                <div className="">
+                                  Live 
                                 </div>
 
                                  {/* Segunda Parte del titulo */}
-                                 <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
+                                <div className=" ">
                                   Project
+                                </div> 
+
+                                </div>
+                              
+                                <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
+                                   {image.desc} 
                                 </div> 
 
                                  {/* iconos */}
