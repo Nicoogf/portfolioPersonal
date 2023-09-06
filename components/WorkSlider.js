@@ -5,15 +5,15 @@ const workSlider = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/thumb11.jpg',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/thumb22.jpg',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/thumb33.jpg',
         },
         {
           title: 'title',
@@ -80,8 +80,8 @@ const WorkSlider = () => {
                   <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
                   { slide.images.map(( image , index )=>{
                       return(
-                        <div className="relative rounded-lg overflow-hidden flex items-center justify-center group" key={ index }
-                      >
+
+                        <a href="http://google.com" target="_blank"className="relative rounded-lg overflow-hidden flex items-center justify-center group" key={ index } >
                           <div className="flex items-center justify-center relative overflow-hidden group"> 
                             { /* Image */}
                             <Image src={ image.path} width={500} height={300} alt=""/>
@@ -111,7 +111,7 @@ const WorkSlider = () => {
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </a>
                       )
                   })}
                   </div>

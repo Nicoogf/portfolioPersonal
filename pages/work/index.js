@@ -17,7 +17,7 @@ const Work = () => {
           <div className="flex flex-col xl:flex-row gap-x-8">
 
             {/* Text */}
-            <div className="text-center flex xl:w-[40vh] flex-col lg:text-left mb-4 
+            <div className="text-center flex xl:w-[40vh] flex-col lg:mx-auto xl:text-left mb-4 
             xl:mb-0">
 
               <motion.h2 
@@ -25,9 +25,9 @@ const Work = () => {
                   initial='hidden' 
                   animate="show" 
                   exit="hidden" 
-                  className="h2 xl:mt-12"
+                  className="h2 xl:mt-12 text-4xl"
                 >
-                  My Works <span className="text-accent"> . </span> 
+                  Mis Proyectos <span className="text-accent"> . </span> 
 
               </motion.h2>
 
@@ -37,7 +37,8 @@ const Work = () => {
                 animate="show" 
                 exit="hidden" 
                 className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-                Lorem ipsum dolor sit amet. Qui velit minima quo saepe fugit id veritatis galisum. Ut aspernatur voluptatem et labore minus et recusandae
+                La importancia vital de los proyectos expuestos radica en la diversidad de desafíos que enfrenté <br/> 
+                En cada proyecto se puede encontrar una parte de mi crecimiento y una consolidación de mis habilidades en la gestión de proyectos.
               </motion.p>
 
             </div>
