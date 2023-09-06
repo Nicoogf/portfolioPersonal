@@ -25,9 +25,9 @@ const Services = () => {
                   initial='hidden' 
                   animate="show" 
                   exit="hidden" 
-                  className="h2 xl:mt-8"
+                  className="h2 xl:mt-8 text-5xl"
                 >
-                 Mi Servicios <span className="text-accent"> . </span> 
+                 Mis Habilidades <span className="text-accent"> . </span> 
 
               </motion.h2>
 
@@ -37,8 +37,8 @@ const Services = () => {
                 animate="show" 
                 exit="hidden" 
                 className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-                 <span className="text-white/90 font-bold"> Usabilidad, el rendimiento y la estética </span>   <br />
-                 para garantizar una presencia en línea efectiva y atractiva.
+                 <span className="text-white/90 font-bold"> La pasión, el trabajo en equipo y constancia </span>   <br />
+                 fueron vitales en mi aprendizaje para hoy poder destacar en aspectos como
               </motion.p>
 
             </div>

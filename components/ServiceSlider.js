@@ -28,7 +28,7 @@ const serviceData = [
   },
   {
     icon: <RxPencil2 />,
-    title: 'Estilos de Pagina',
+    title: 'Frameworks',
     description: 'Utilizando Bootstrap y Tailwind para crear aplicaciones con estilos predefinidos y una estructura eficiente.',
   },
   {
@@ -39,7 +39,7 @@ const serviceData = [
   {
     icon: <RxReader />,
     title: 'Metodologias',
-    description: 'En mi capacitación , implementábamos Scrum para gestionar proyectos de forma colaborativa.',
+    description: 'En mi capacitación , implementábamos metodologia Scrum para gestionar proyectos de forma colaborativa.',
   }
  
 ];
@@ -55,8 +55,8 @@ const ServiceSlider = () => {
           },
           640: {
             slidesPerView : 3,
-            spaceBetween : 15
-          },         
+            spaceBetween : 10
+          },           
        }}
       freeMode = {true} 
       pagination = {{
@@ -77,11 +77,11 @@ const ServiceSlider = () => {
                     {/* Titulo y Descripcion */} 
                     <div className="mb-8">
                       <div className="mb-2 text-lg"> { item.title } </div>
-                      <p className="max-w-[350px] leading-normal"> { item.description } </p>
+                      <p className="max-w-[350px] leading-normal sm:text-sm"> { item.description } </p>
                     </div>
 
                     {/* Arrow */}
-                    <div className="text-3xl">
+                    <div className="text-2xl mx-auto">
                        <RxArrowTopRight  className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300"/>
                     </div>
 
